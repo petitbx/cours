@@ -15,13 +15,12 @@ class User
     private $password;
     private $roleID;
 
-    public function __construct($name, $lastName, $address, $email, $password, roleID){
+    public function __construct($name, $lastName, $address, $email, $password){
     	$this->name = $name;
     	$this->lastName = $lastName;
     	$this->address = $address;
     	$this->email = $email;
     	$this->password = $password;
-    	$this->roleID = $roleID;
     }
 
     public function getName(){
@@ -68,6 +67,7 @@ class User
     public function setRoleID($roleID) {
     	$this->roleID = $roleID;
     }
+
 
 
 
