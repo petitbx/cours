@@ -11,7 +11,7 @@ class Database
     public function try_connection()
     {
         try {
-            $bdd =  (new PDO('mysql:host=localhost;port=9998;', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)));
+            $bdd =  (new PDO('mysql:host=127.0.0.1;port=3306;', 'admin', 'toto', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)));
             $bdd->query("SET NAMES utf8");
             $bdd->query("USE airshoe");
         }
